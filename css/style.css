@@ -136,6 +136,40 @@ body {
   font-size: 1rem;
 }
 
+.content-page {
+  padding: 2rem 0 0;
+}
+
+.content-page h2 {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+}
+
+.content-page p,
+.content-page li {
+  color: var(--muted);
+}
+
+.items-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.items-list article {
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.items-list article:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.items-list h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1rem;
+}
+
 @media (max-width: 720px) {
   .topbar {
     flex-direction: column;
