@@ -3,31 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Franklin Dustman</title>
+    <title>Contact | Franky Dustman</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="identity">
-          <h1>Franklin Dustman</h1>
-          <p>Learning Experience Designer</p>
-        </div>
-        <nav class="main-nav" aria-label="Primary navigation">
-          <a href="about.html">About Me</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Franky Dustman</a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
           <a href="resume.html">Resume</a>
           <a href="contact.html" class="active">Contact</a>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main>
-        <section class="content-page">
-          <h2>Contact</h2>
-          <p>Email: hello@franklindustman.com</p>
-          <p>Location: Remote / Available worldwide</p>
-        </section>
-      </main>
-    </div>
+    <main class="container page">
+      <section class="card">
+        <h1>Contact</h1>
+        <p>Email: hello@frankydustman.com</p>
+        <p>Location: Remote / Available worldwide</p>
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="Your email" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell me about your project"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

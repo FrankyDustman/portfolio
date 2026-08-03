@@ -3,58 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Franklin Dustman | Portfolio</title>
-    <meta name="description" content="Portfolio website for Franklin Dustman, showcasing work, experience, and contact details." />
+    <title>Franky Dustman | Portfolio</title>
+    <meta name="description" content="Portfolio website for Franky Dustman, showcasing work, experience, and contact details." />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="identity">
-          <h1>Franklin Dustman</h1>
-          <p>Learning Experience Designer</p>
-        </div>
-        <nav class="main-nav" aria-label="Primary navigation">
-          <a href="about.html">About Me</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Franky Dustman</a>
+        <nav class="site-nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
           <a href="resume.html">Resume</a>
           <a href="contact.html">Contact</a>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main>
-        <section class="intro" aria-label="Profile summary">
-          <div class="intro-copy">
-            <p class="tagline">Knowledge Management</p>
-            <p class="tagline">Process Improvement</p>
-          </div>
-        </section>
-
-        <section class="featured" aria-labelledby="featured-project">
-          <div class="section-title">
-            <h2 id="featured-project">Featured Project</h2>
-            <p>Google Home Simulator</p>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image" aria-label="Illustration for Google Home Simulator">
-              <svg viewBox="0 0 320 220" role="img" aria-hidden="true">
-                <rect x="36" y="30" width="248" height="160" rx="24" fill="#111827" />
-                <rect x="70" y="58" width="180" height="104" rx="16" fill="#f3f4f6" />
-                <rect x="96" y="78" width="46" height="46" rx="12" fill="#3b82f6" />
-                <rect x="150" y="78" width="76" height="18" rx="9" fill="#94a3b8" />
-                <rect x="150" y="104" width="58" height="12" rx="6" fill="#cbd5e1" />
-                <circle cx="224" cy="100" r="24" fill="#f59e0b" />
-              </svg>
-            </div>
-            <div class="project-description">
-              <p>
-                A thoughtful concept experience exploring how people interact with connected spaces through intuitive, human-centered design.
-              </p>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Creative technologist and builder</p>
+            <h1>Turning ideas into thoughtful digital experiences.</h1>
+            <p class="lead">
+              I design and build websites that balance visual clarity, user empathy, and reliable performance.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="projects.html">View Projects</a>
+              <a class="btn btn-secondary" href="contact.html">Get in Touch</a>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
+          <div class="card">
+            <h2>What I bring</h2>
+            <ul>
+              <li>Modern front-end development</li>
+              <li>Accessible and responsive design</li>
+              <li>Clear communication and collaboration</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
