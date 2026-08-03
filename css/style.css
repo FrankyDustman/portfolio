@@ -34,6 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
   padding: 1rem 0;
 }
 
@@ -41,17 +42,20 @@ body {
   color: var(--text);
   text-decoration: none;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .site-nav {
   display: flex;
+  align-items: center;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .site-nav a {
   color: var(--muted);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .site-nav a.active,
@@ -123,6 +127,10 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .nav-wrap {
+    flex-wrap: wrap;
+  }
+
   .project-grid {
     grid-template-columns: 1fr;
   }
